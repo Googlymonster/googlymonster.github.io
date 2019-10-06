@@ -8,30 +8,38 @@
 
 <nav id="navbar">
   <ul>
-    <a class="nav-link" href="#about" rel="internal"><li>About me</li></a>
-    <a class="nav-link" href="#projects" rel="internal"><li>Projects</li></a>
-    <a class="nav-link" href="#profile-link" rel="internal"><li>Contact</li></a>
+    <a class="nav-link" href="#about" rel="internal"
+      ><li class="nav-item">About me</li></a
+    >
+    <a class="nav-link" href="#projects" rel="internal"
+      ><li class="nav-item">Projects</li></a
+    >
+    <a class="nav-link" href="#contact" rel="internal"
+      ><li class="nav-item">Contact</li></a
+    >
   </ul>
 </nav>
 <div id="welcome-section">
   <h1>Welcome to my Portfolio</h1>
 </div>
 <div id="about">
-  <h2>About me</h2>
+  <h2 class="section-header">About me</h2>
   <section>
     <p>
       My name is Kevin Nguyen, I graduated from Texas Tech University with a
       degree in Chemical Engineering in 2013. I worked as a field engineer from
       2013 to 2017 before changing career paths into an operations engineer in
       2017. From 2017 to 2018 I worked as an operations engineer before an
-      opportunity arose to be a technical services engineer.
+      opportunity arose to be a technical services engineer. Currently I'm
+      working as a Compliance Data Specialist doing ETL data work.
     </p>
     <p>
       I have always loved science and engineering since I was young. I try to
       find solutions to hard problems my whole life. During the years I have
       continue to learn to expand my skillset as an engineer, which lead me to
       start coding. Being that my father is a software engineer it help me fast
-      track my knowledge in this skill.
+      track my knowledge in this skill. I consider myself a self-starter that is
+      motivated to continue learning all aspects of engineering.
     </p>
     <p>
       My current web backend stack is based around Python, with web development
@@ -39,12 +47,13 @@
       involves React/Vue with vanilla javascript using DOM manipulation. I chose
       python because I started to use it for ETL data manipulation, along with
       SQL and VBA as well. Using Jupyter Notebook to do my scripting and apply
-      some data science as well.
+      some data science as well. Utilizing Technologies like Docker, Redis, AWS, and
+      etc I've been able to create various projects.
     </p>
   </section>
 </div>
 <div id="projects">
-  <h2>Projects</h2>
+  <h2 class="section-header">Projects</h2>
   <div id="project-list">
     <div class="project-tile">
       <a href="https://codepen.io/googlymonster/live/OqjbJx" target="_blank">
@@ -99,6 +108,37 @@
     </div>
   </div>
 </div>
+<div id="contact">
+  <h2 class="section-header">
+    Contact Me
+  </h2>
+  <section>
+    <p>
+      To reach me about any opportunities you my have please submit the form
+      below.
+    </p>
+  </section>
+  <section>
+    <form id="contact_form" method="POST" enctype="multipart/form-data">
+      <div class="row">
+        <label class="required" for="name">Your name:</label><br />
+        <input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+        <span id="name_validation" class="error_message"></span>
+      </div>
+      <div class="row">
+        <label class="required" for="email">Your email:</label><br />
+        <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+        <span id="email_validation" class="error_message"></span>
+      </div>
+      <div class="row">
+        <label class="required" for="message">Your message:</label><br />
+        <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
+        <span id="message_validation" class="error_message"></span>
+      </div>
+        <input id="submit_button" type="submit" value="Send email" />
+    </form>
+  </section>
+</div>
 <div class="profile-link">
   <a id="profile-link" href="https://github.com/Googlymonster" target="_blank"
     ><i class="fab fa-github fa-2x"></i
@@ -106,5 +146,10 @@
   <a href="https://codepen.io/googlymonster/" target="_blank"
     ><i class="fab fa-codepen fa-2x"></i
   ></a>
+  <a href="https://www.linkedin.com/in/kevin-nguyen-34192674/" target="_blank"
+    ><i class="fab fa-linkedin fa-2x"></i
+  ></a>
 </div>
-<footer>&copy; copyright</footer>
+<footer>
+  <small>&copy; copyright 2019, WIN Technologies LLC</small>
+</footer>
