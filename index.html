@@ -47,8 +47,8 @@
       involves React/Vue with vanilla javascript using DOM manipulation. I chose
       python because I started to use it for ETL data manipulation, along with
       SQL and VBA as well. Using Jupyter Notebook to do my scripting and apply
-      some data science as well. Utilizing Technologies like Docker, Redis, AWS, and
-      etc I've been able to create various projects.
+      some data science as well. Utilizing Technologies like Docker, Redis, AWS,
+      and etc I've been able to create various projects.
     </p>
   </section>
 </div>
@@ -64,46 +64,7 @@
           height="300"
           width="300"
         />
-        <div class="project-title">Tribute Page</div>
-      </a>
-    </div>
-    <div class="project-tile">
-      <a href="https://codepen.io/googlymonster/live/oVeYEZ" target="_blank"
-        ><img class="project-img" src="" />
-        <img
-          class="project-pic"
-          src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2988180/survey.png"
-          alt="project"
-          height="300"
-          width="300"
-        />
-        <div class="project-title">Survey Form</div>
-      </a>
-    </div>
-    <div class="project-tile">
-      <a href="https://codepen.io/googlymonster/live/XGaNVJ" target="_blank"
-        ><img class="project-img" src="" />
-        <img
-          class="project-pic"
-          src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2988180/landing.png"
-          alt="project"
-          height="300"
-          width="300"
-        />
-        <div class="project-title">Landing Page</div>
-      </a>
-    </div>
-    <div class="project-tile">
-      <a href="https://codepen.io/googlymonster/live/gEeoBB" target="_blank"
-        ><img class="project-img" src="" />
-        <img
-          class="project-pic"
-          src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2988180/technical.png"
-          alt="project"
-          height="300"
-          width="300"
-        />
-        <div class="project-title">Technical Documentation</div>
+        <div class="project-title">Googly Codes</div>
       </a>
     </div>
   </div>
@@ -119,24 +80,57 @@
     </p>
   </section>
   <section>
-    <form id="contact_form" method="POST" enctype="multipart/form-data">
+    <form
+      id="contact_form"
+      name="contact_form"
+      class="contact_form"
+      enctype="text/plain"
+      action="https://docs.google.com/forms/d/e/1FAIpQLScaxmRoayyC4uizUbHpuXmPf-_QOHSdZxLOVsHrvPXacUO1_Q/formResponse?usp=sf_link"
+      target="hidden_iframe"
+      onsubmit="submitted=true;"
+    >
       <div class="row">
         <label class="required" for="name">Your name:</label><br />
-        <input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+        <input
+          id="entry.15794158"
+          class="input"
+          name="entry.15794158"
+          type="text"
+          size="30"
+        /><br />
         <span id="name_validation" class="error_message"></span>
       </div>
       <div class="row">
         <label class="required" for="email">Your email:</label><br />
-        <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+        <input
+          id="entry.881163393"
+          class="input"
+          name="entry.881163393"
+          type="text"
+          size="30"
+        /><br />
         <span id="email_validation" class="error_message"></span>
       </div>
       <div class="row">
         <label class="required" for="message">Your message:</label><br />
-        <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
+        <textarea
+          id="entry.314667112"
+          class="input"
+          name="entry.314667112"
+          rows="7"
+          cols="30"
+        ></textarea
+        ><br />
         <span id="message_validation" class="error_message"></span>
       </div>
-        <input id="submit_button" type="submit" value="Send email" />
+      <input id="submit_button" type="submit" value="Submit" />
     </form>
+    <iframe
+      name="hidden_iframe"
+      id="hidden_iframe"
+      style="display: none;"
+      onload="if(submitted) {}"
+    ></iframe>
   </section>
 </div>
 <div class="profile-link">
@@ -151,5 +145,16 @@
   ></a>
 </div>
 <footer>
-  <small>&copy; copyright 2019, WIN Technologies LLC</small>
+  <small>&copy; 2019, WIN Technologies LLC</small>
 </footer>
+
+<script src="assets/js/jquery.min.js"></script>
+<script type="text/javascript">
+  var submitted = false;
+</script>
+<script type="text/javascript">
+  $("#contact_form").on("submit", function(e) {
+    $("#contact_form *").fadeOut(2000);
+    $("#contact_form").prepend("Your submission has been processed...");
+  });
+</script>
