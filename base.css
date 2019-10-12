@@ -75,6 +75,7 @@ body {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  font-size: 20px;
 }
 #submit_button:hover {
   box-shadow: 5px 5px #888888;
@@ -115,14 +116,14 @@ body {
   box-shadow: 3px 1px #888888;
   border-radius: 5px;
 }
-.project-title {
+/* .project-title {
   margin: auto auto;
   padding: auto auto;
   text-align: center;
   border: 1px solid black;
   box-shadow: 3px 1px #888888;
   border-radius: 5px;
-}
+} */
 .profile-link {
   display: flex;
   flex-direction: row;
