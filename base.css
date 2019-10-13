@@ -103,6 +103,7 @@ textarea {
 }
 #project-list {
   display: flex;
+  flex-flow: column;
 }
 .project-tile {
   display: flex;
