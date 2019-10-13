@@ -85,15 +85,18 @@ textarea {
 }
 #projects {
   background-color: #326489;
+  border-radius: 7px;
 }
 .section-header {
   font-size: 5vw;
   text-align: center;
+  padding-top: 10px;
 }
 .tools-icons {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
   margin-bottom: 15px;
 }
 #projects h2 {
