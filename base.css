@@ -56,9 +56,9 @@ body {
 }
 #contact {
   color: white;
-  
 }
-#contact_form input, textarea {
+#contact_form input,
+textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #326489;
@@ -88,6 +88,13 @@ body {
 }
 .section-header {
   font-size: 5vw;
+  text-align: center;
+}
+.tools-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
 }
 #projects h2 {
   margin: 5px;
@@ -95,15 +102,11 @@ body {
   color: white;
 }
 #project-list {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  grid-template-rows: auto auto;
+  display: flex;
 }
 .project-tile {
-  display: grid;
-  grid-template-columns: auto;
-  justify-content: center;
-  align-items: center;
+  display: flex;
+  flex-direction: column;
   background-color: #eee;
   margin: 15px;
   padding: 30px;
@@ -111,19 +114,57 @@ body {
   box-shadow: 5px 5px #888888;
   border-radius: 5px;
 }
+.project-title {
+  color: rgb(40, 65, 226);
+}
 .project-pic {
   border: 1px solid black;
   box-shadow: 3px 1px #888888;
   border-radius: 5px;
 }
-/* .project-title {
-  margin: auto auto;
-  padding: auto auto;
+.project-details {
+  color: #4a4e69;
+  font-weight: 300;
+}
+.technology-header {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #4a4e69;
+}
+.technology-details {
+  color: #4a4e69;
+  font-weight: 300;
+}
+.tech-icons {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.project-button-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+.project-button {
+  position: relative;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
   text-align: center;
-  border: 1px solid black;
-  box-shadow: 3px 1px #888888;
+  border: 1px solid transparent;
   border-radius: 5px;
-} */
+  background-color: #326489;
+  width: 100%;
+  max-width: 200px;
+  color: white;
+  box-shadow: 0px 2px 5px 1px darkgrey;
+}
+.project-button:hover {
+  box-shadow: 3px 1px #888888;
+}
 .profile-link {
   display: flex;
   flex-direction: row;

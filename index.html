@@ -35,21 +35,31 @@
     </p>
     <p>
       I have always loved science and engineering since I was young. I try to
-      find solutions to hard problems my whole life. During the years I have
-      continue to learn to expand my skillset as an engineer, which lead me to
-      start coding. Being that my father is a software engineer it help me fast
-      track my knowledge in this skill. I consider myself a self-starter that is
-      motivated to continue learning all aspects of engineering.
+      find solutions to hard problems and would say I'm an outside of the box
+      thinker. During the years I have continue to learn to expand my skillset
+      as an engineer, which lead me to start coding. Being that my father is a
+      software engineer it help me fast track my knowledge in this skill. I
+      consider myself a self-starter that is motivated to continue learning all
+      aspects of engineering.
     </p>
-    <p>
-      My current web backend stack is based around Python, with web development
-      experience using Django/Flask. Frontend experience using javascript
-      involves React/Vue with vanilla javascript using DOM manipulation. I chose
-      python because I started to use it for ETL data manipulation, along with
-      SQL and VBA as well. Using Jupyter Notebook to do my scripting and apply
-      some data science as well. Utilizing Technologies like Docker, Redis, AWS,
-      and etc I've been able to create various projects.
-    </p>
+  </section>
+  <section>
+    <h2 class="section-header">Tools I Use</h2>
+    <div class="tools-icons">
+      <img
+        class="techlogo"
+        src="img/techlogos/vscode.png"
+        alt="VSCode"
+        width="150"
+      />
+      <img
+        class="techlogo"
+        src="img/techlogos/docker.png"
+        alt="Docker"
+        width="150"
+      />
+      <img class="techlogo" src="img/techlogos/git.png" alt="GIT" width="150" />
+    </div>
   </section>
 </div>
 <div id="projects">
@@ -59,11 +69,16 @@
       <a href="#" target="_blank">
         <div class="project-title">Googly Codes</div>
       </a>
-      <p>A blogging website similiar to Medium that is free to use.</p>
+      <p class="project-details">
+        A blogging website similiar to Medium that is free to use.
+      </p>
       <h3 class="technology-header">Technology</h3>
-      <p>
-        Googly Codes was built using Django, a Python MVT framework, as a
-        backend
+      <p class="technology-details">
+        Googly Codes was built using Django, a Python MVT framework, as the
+        backend that includes Django Rest Framework API endpoints. The database
+        used is Postgres. The CSS framework for this project is Bootstrap4 for a
+        mobile-first layout. This project is deployed on an AWS EC2 instance
+        with S3 storage.
       </p>
       <div class="tech-icons">
         <img
@@ -80,6 +95,13 @@
         />
         <img
           class="techlogo"
+          src="img/techlogos/postgres.svg"
+          alt="Postgres"
+          width="100"
+          height="60"
+        />
+        <img
+          class="techlogo"
           src="img/techlogos/aws.png"
           alt="aws"
           width="100"
@@ -91,7 +113,7 @@
           width="100"
         />
       </div>
-      <div>
+      <div class="project-button-wrapper">
         <button class="project-button" href="#">See Blog</button>
       </div>
     </div>
@@ -99,11 +121,14 @@
       <a href="#" target="_blank">
         <div class="project-title">Strength Project</div>
       </a>
-      <p>A blogging website similiar to Medium that is free to use.</p>
+      <p class="project-details">
+        A mobile app used to track a Strength Athletes workout and progress.
+      </p>
       <h3 class="technology-header">Technology</h3>
-      <p>
-        Googly Codes was built using Django, a Python MVT framework, as a
-        backend
+      <p class="technology-details">
+        The Strength Project was built using The Django Rest Framework as a
+        backend api. The front-end of React Native was used to create the app
+        for IOS and Android.
       </p>
       <div class="tech-icons">
         <img
@@ -114,12 +139,25 @@
         />
         <img
           class="techlogo"
+          src="img/techlogos/react.png"
+          alt="React Native"
+          width="100"
+        />
+        <img
+          class="techlogo"
+          src="img/techlogos/postgres.svg"
+          alt="Postgres"
+          width="100"
+          height="60"
+        />
+        <img
+          class="techlogo"
           src="img/techlogos/aws.png"
           alt="aws"
           width="100"
         />
       </div>
-      <div>
+      <div class="project-button-wrapper">
         <button class="project-button" href="#">See Blog</button>
       </div>
     </div>
@@ -131,8 +169,7 @@
   </h2>
   <section>
     <p>
-      To reach me about any opportunities you my have please submit the form
-      below.
+      To reach me about any opportunities please submit the form below.
     </p>
   </section>
   <section>
@@ -153,6 +190,7 @@
           name="entry.15794158"
           type="text"
           size="30"
+          required
         /><br />
         <span id="name_validation" class="error_message"></span>
       </div>
@@ -164,6 +202,7 @@
           name="entry.881163393"
           type="text"
           size="30"
+          required
         /><br />
         <span id="email_validation" class="error_message"></span>
       </div>
@@ -175,6 +214,7 @@
           name="entry.314667112"
           rows="7"
           cols="30"
+          required
         ></textarea
         ><br />
         <span id="message_validation" class="error_message"></span>
