@@ -51,19 +51,28 @@
         src="img/techlogos/vscode.png"
         alt="VSCode"
         width="150"
+        title="Visual Studio Code"
       />
       <img
         class="techlogo"
         src="img/techlogos/docker.png"
         alt="Docker"
         width="150"
+        title="Docker"
       />
-      <img class="techlogo" src="img/techlogos/git.png" alt="GIT" width="150" />
+      <img
+        class="techlogo"
+        title="Git"
+        src="img/techlogos/git.png"
+        alt="GIT"
+        width="150"
+      />
       <img
         class="techlogo"
         src="img/techlogos/jupyter.png"
         alt="Jupyter"
         width="150"
+        title="Jupyter Notebook"
       />
     </div>
   </section>
@@ -92,12 +101,14 @@
           src="img/techlogos/django.svg"
           alt="Django"
           width="100"
+          title="Django"
         />
         <img
           class="techlogo"
           src="img/techlogos/djangorest.png"
           alt="Django Rest"
           width="100"
+          title="Django Rest Framework"
         />
         <img
           class="techlogo"
@@ -105,28 +116,32 @@
           alt="Postgres"
           width="100"
           height="60"
+          title="Postgresql"
         />
         <img
           class="techlogo"
           src="img/techlogos/nginx.png"
           alt="Nginx"
           width="100"
+          title="Nginx"
         />
         <img
           class="techlogo"
           src="img/techlogos/aws.png"
           alt="aws"
           width="100"
+          title="AWS"
         />
         <img
           class="techlogo"
           src="img/techlogos/bootstrap.png"
           alt="bootstrap"
           width="100"
+          title="Bootstrap 4"
         />
       </div>
       <div class="project-button-wrapper">
-        <button class="project-button" href="#">See Blog</button>
+        <button class="project-button" href="#">Start Blogging</button>
       </div>
     </div>
     <div class="project-tile">
@@ -148,6 +163,7 @@
           src="img/techlogos/djangorest.png"
           alt="Django Rest"
           width="100"
+          title="Django Rest Framework"
         />
         <img
           class="techlogo"
@@ -161,12 +177,14 @@
           alt="Postgres"
           width="100"
           height="60"
+          title="Postgresql"
         />
         <img
           class="techlogo"
           src="img/techlogos/aws.png"
           alt="aws"
           width="100"
+          title="AWS"
         />
       </div>
       <div class="project-button-wrapper">
@@ -175,14 +193,19 @@
     </div>
   </div>
 </div>
-<div id="contact">
+<div id="contact-section">
   <h2 class="section-header">
     Contact Me
   </h2>
   <section>
-    <p>
-      To reach me about any opportunities please submit the form below.
-    </p>
+    <div class="contact_tabs">
+      <button id="freelance" class="contact_tab" onclick="showContactForm()">
+        Freelance Opportunities
+      </button>
+      <button id="hiring" class="contact_tab" onclick="showContact()">
+        Hiring Opportunities
+      </button>
+    </div>
   </section>
   <section>
     <form
@@ -194,6 +217,10 @@
       target="hidden_iframe"
       onsubmit="submitted=true;"
     >
+      <p>
+        To reach me about any freelance opportunities please submit the form
+        below.
+      </p>
       <div class="row">
         <label class="required" for="name">Your name:</label><br />
         <input
@@ -202,6 +229,7 @@
           name="entry.15794158"
           type="text"
           size="30"
+          placeholder="Enter your name"
           required
         /><br />
         <span id="name_validation" class="error_message"></span>
@@ -214,6 +242,7 @@
           name="entry.881163393"
           type="text"
           size="30"
+          placeholder="Enter your email"
           required
         /><br />
         <span id="email_validation" class="error_message"></span>
@@ -226,6 +255,7 @@
           name="entry.314667112"
           rows="7"
           cols="30"
+          placeholder="Describe your request here"
           required
         ></textarea
         ><br />
@@ -244,6 +274,16 @@
       style="display: none;"
       onload="if(submitted) {}"
     ></iframe>
+    <div id="contact" style="display: none;">
+      <p>
+        To reach me for job opportunities you can reach me with below contact
+        information.
+      </p>
+      <ul>
+        <li class="contact-list">Phone: (806)473-8160</li>
+        <li class="contact-list">Email: kdnguyen9088@gmail.com</li>
+      </ul>
+    </div>
   </section>
 </div>
 <div class="profile-link">
@@ -266,14 +306,40 @@
   var submitted = false;
 </script>
 <script type="text/javascript">
-  // $("#contact_form").on("submit", function(e) {
-  //   $("#contact_form *").fadeOut(2000);
-  //   $("#contact_form").prepend("Your submission has been processed...");
-  // });
-
   function formSubmit(event) {
     var form = document.getElementById("contact_form");
     form.onsubmit = alert("Your submission has been processed...");
     form.reset();
+  }
+
+  function showContactForm() {
+    var form = document.getElementById("contact_form");
+    var contact = document.getElementById("contact");
+    var hiring = document.getElementById("hiring");
+    var freelance = document.getElementById("freelance");
+    if (form.style.display === "none") {
+      form.style.display = "block";
+      freelance.style.borderBottom = "2px solid lightblue";
+      hiring.style.borderBottom = "transparent";
+      contact.style.display = "none";
+      contact.style.borderBottom = "none";
+    } else {
+      contact.style.display = "none";
+    }
+  }
+  function showContact() {
+    var form = document.getElementById("contact_form");
+    var contact = document.getElementById("contact");
+    var hiring = document.getElementById("hiring");
+    var freelance = document.getElementById("freelance");
+    if (contact.style.display === "none") {
+      contact.style.display = "block";
+      hiring.style.borderBottom = "2px solid lightblue";
+      freelance.style.borderBottom = "transparent";
+      form.style.display = "none";
+      form.style.borderBottom = "none";
+    } else {
+      form.style.display = "none";
+    }
   }
 </script>
