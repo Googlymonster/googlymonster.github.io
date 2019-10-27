@@ -4,28 +4,59 @@ body {
   font-family: "Lucida Grande", "Lucida Sans Unicode", Tahoma, Sans-Serif;
   font-size: 35px;
 }
+.profile-container {
+  position: relative;
+  border-bottom: 2px dashed lightblue;
+  margin: 15px;
+  padding: 25px;
+}
+#profile-pic img {
+  border-radius: 25%;
+  max-width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: auto;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.next {
+  right: 25px;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
 #nav-sticky-wrapper {
   display: block;
   position: absolute;
   width: 100%;
-}
-.sticky {
-  position: fixed;
+  z-index: 100;
 }
 #navbar {
   background-color: #181818;
-  z-index: 100;
   width: 100%;
-  opacity: 0.5;
   overflow: hidden;
+  top: 0;
 }
 #navbar ul {
   display: flex;
   flex-direction: row;
   list-style: none;
   margin: auto;
-  padding: auto;
-  justify-content: center;
+  justify-content: space-between;
 }
 .nav-link {
   margin: auto;
@@ -52,6 +83,7 @@ body {
 }
 #welcome-section h1 {
   color: white;
+  margin-left: 15px;
   padding: 15px;
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 25px;
@@ -59,7 +91,6 @@ body {
   font-size: 5vw;
   max-width: 100%;
 }
-
 #submit_button {
   background-color: #326489;
   color: white;
@@ -68,6 +99,7 @@ body {
   border-radius: 4px;
   cursor: pointer;
   font-size: 20px;
+  z-index: -1;
 }
 #submit_button:hover {
   box-shadow: 5px 5px #888888;
@@ -82,6 +114,7 @@ body {
 }
 #projects {
   background-color: #326489;
+  background-image: linear-gradient(to bottom right, #326489, white);
   border-radius: 7px;
 }
 .section-header {
@@ -117,7 +150,7 @@ body {
   padding: 30px;
   border: 1px solid black;
   box-shadow: 5px 5px #888888;
-  border-radius: 5px;
+  border-radius: 7px;
 }
 .project-title {
   color: rgb(40, 65, 226);
@@ -192,6 +225,10 @@ body {
 #contact-section {
   color: white;
 }
+#contact-header {
+  border-bottom: 2px dashed #326489;
+  padding-bottom: 10px;
+}
 #contact_form input,
 textarea {
   width: 100%;
@@ -251,6 +288,11 @@ footer {
       Sans-Serif;
     font-size: 30px;
   }
+  .profile-container {
+    position: relative;
+    border-right: 2px dashed lightblue;
+    border-bottom: none;
+  }
   #welcome-section {
     display: flex;
     flex-direction: row;
@@ -260,6 +302,19 @@ footer {
     height: 50vh;
     width: 100vw;
     font-size: 15px;
+  }
+  #welcome-section h1 {
+    color: white;
+    margin-left: 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
+    text-shadow: 2px 2px black;
+    font-size: 3vw;
+  }
+  #navbar {
+    background-color: #181818;
+    width: 100%;
+    overflow: hidden;
   }
   .nav-link {
     text-decoration: none;
