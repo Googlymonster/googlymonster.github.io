@@ -6,24 +6,26 @@
   />
 </head>
 
-<nav id="navbar">
-  <ul>
-    <a class="nav-link" href="#about" rel="internal"
-      ><li class="nav-item">About me</li></a
-    >
-    <a class="nav-link" href="#projects" rel="internal"
-      ><li class="nav-item">Projects</li></a
-    >
-    <a class="nav-link" href="#contact" rel="internal"
-      ><li class="nav-item">Contact</li></a
-    >
-  </ul>
-</nav>
 <div id="welcome-section">
   <h1>Welcome to my Portfolio</h1>
 </div>
+<div id="nav-sticky-wrapper">
+  <nav id="navbar">
+    <ul>
+      <a class="nav-link" href="#about" rel="internal"
+        ><li class="nav-item">About me</li></a
+      >
+      <a class="nav-link" href="#projects" rel="internal"
+        ><li class="nav-item">Projects</li></a
+      >
+      <a class="nav-link" href="#contact-section" rel="internal"
+        ><li class="nav-item">Contact</li></a
+      >
+    </ul>
+  </nav>
+</div>
 <div id="about">
-  <h2 class="section-header">About me</h2>
+  <h2 id="about-header" class="section-header">About me</h2>
   <section>
     <p>
       My name is Kevin Nguyen, I graduated from Texas Tech University with a
@@ -44,7 +46,7 @@
     </p>
   </section>
   <section>
-    <h2 class="section-header">Tools I Use</h2>
+    <h2 id="tools-header" class="section-header">Tools I Use</h2>
     <div class="tools-icons">
       <img
         class="techlogo"
@@ -73,6 +75,13 @@
         alt="Jupyter"
         width="150"
         title="Jupyter Notebook"
+      />
+      <img
+        class="techlogo"
+        src="img/techlogos/jenkins.png"
+        alt="Jupyter"
+        width="150"
+        title="Jenkins"
       />
     </div>
   </section>
@@ -298,20 +307,19 @@
   ></a>
 </div>
 <footer>
-  <small>&copy; 2019, WIN Technologies LLC</small>
+  <small>Designed and created by Kevin Nguyen</small>
 </footer>
 
-<script src="assets/js/jquery.min.js"></script>
 <script type="text/javascript">
   var submitted = false;
-</script>
-<script type="text/javascript">
+  // Google form submission
   function formSubmit(event) {
     var form = document.getElementById("contact_form");
     form.onsubmit = alert("Your submission has been processed...");
     form.reset();
   }
 
+  // Contact form tab
   function showContactForm() {
     var form = document.getElementById("contact_form");
     var contact = document.getElementById("contact");
@@ -340,6 +348,27 @@
       form.style.borderBottom = "none";
     } else {
       form.style.display = "none";
+    }
+  }
+
+  // Navbar highlight scroll
+  // When the user scrolls the page, execute myFunction
+  window.onscroll = function() {
+    myFunction();
+  };
+
+  // Get the navbar
+  var navbar = document.getElementById("nav-sticky-wrapper");
+
+  // Get the offset position of the navbar
+  var sticky = navbar.offsetTop;
+  console.log(sticky);
+  // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+  function myFunction() {
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add("sticky");
+    } else {
+      navbar.classList.remove("sticky");
     }
   }
 </script>
