@@ -57,8 +57,12 @@ nav {
     justify-content: center;
     margin-top: 30px;
 
-    img {
+    .avatar {
       width: 50%;
+      border-radius: 50%;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
     }
 
     h1 {
@@ -167,6 +171,10 @@ footer {
   //   align-items: center;
   //   justify-content: center;
   // }
+
+  svg:hover {
+    fill: $primary-color;
+  }
 
   ul {
     list-style: none;
