@@ -1,0 +1,23 @@
+<header class="showcase">
+  <div class="container">
+    {% include nav.html %}
+    <div class="showcase-content">    
+        <div class="mx-2">
+          <h1>Welcome</h1>   
+        {% if site.description or site.github.project_tagline %}
+          <p class="my-2">{{ site.description | default: site.github.project_tagline }}</p>
+        {% endif %}
+        </div>
+        <img src="https://themesbrand.com/zooki/layouts/images/home-2-img.png"/>
+    </div>
+    <div class="showcase-buttons mx-2">
+      <a class="btn-primary" href="{{ site.url }}/download/Resume.pdf" target="_">
+        Resume
+      </a>
+      <a class="btn-secondary" href="{{ site.github.owner_url }}" target="_">
+        GitHub
+      </a>
+    </div>
+</div>
+
+</header>

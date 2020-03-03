@@ -247,8 +247,8 @@ PLATFORMS
 DEPENDENCIES
   github-pages
   jekyll-feed (~> 0.12)
-  jekyll-theme-modernist
-  minima (~> 2.5)
+  jekyll-seo-tag (~> 2.6)
+  jekyll-theme-minimal (~> 0.1.1)
   tzinfo (~> 1.2)
   tzinfo-data
   wdm (~> 0.1.1)

@@ -19,19 +19,22 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Kevin Nguyen
+author: Kevin Nguyen
 email: kdnguyen9088@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  For any hiring opportunities you can contact me. For any freelance opportunities you can email me 
-  at Kevin.Nguyen@wintechnolgies.info.
+  The personal site of Kevin Nguyen, mobile designer and developer for iOS/Android. I blog about code,
+  design, fitness, etc. You can find some of my personal projects here. For any freelance or hiring opportunities
+  you can contact me at Kevin.Nguyen@wintechnologies.info. Use code at your own risk.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: 
-github_username:  googlymonster
-
+repository: googlymonster.github.io
+github_username: googlymonster
+show_downloads: false
+google_analytics: 
 # Build settings
-theme: jekyll-theme-modernist
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
 
 # Exclude from processing.
 # The following items will not be processed, by default.

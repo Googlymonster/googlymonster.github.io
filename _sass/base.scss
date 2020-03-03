@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700');
+@import 'config';
+@import 'utilities';
+@import 'buttons';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family:"Montserrat", Arial, sans-serif;
+  line-height: 1.6;
+  background-color: $light-color;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  ul {
+    display: flex;
+    list-style-type: none;
+  }
+
+  li {
+    padding: 15px;
+  }
+
+  a {
+    color: set-text-color($dark-color);
+  }  
+
+  a:hover {
+    color: $primary-color;
+  }
+}
+
+.showcase {
+  @include set-background($light-color);
+  height: 600px;
+
+  &-content {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+
+    img {
+      width: 50%;
+    }
+
+    h1 {
+      font-size: 50px;
+      line-height: 1.2;
+    }
+  }
+
+}
+
+.post {
+  background-color: $light-color;
+  color: $dark-color;
+  
+  nav {
+    a:hover {
+      color: $primary-color;
+    }
+  }
+
+  a:hover {
+    color: $primary-color;
+  }
+
+  &-container {
+    height: 100%;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+    color: $dark-color;
+  }
+}
+
+blockquote {
+  margin:0 -20px 20px;
+  padding:15px 20px 1px 40px;
+  font-style:italic;
+  background:#ccc;
+  background:rgba(#000, 0.06);
+  color:#222;
+}
+
+code, pre {
+  font-family:Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal;
+  color:#333;
+  font-size:12px;
+  overflow-x:auto;
+}
+
+pre {
+  padding:20px;
+  background: #3A3C42;
+  color:#f8f8f2;
+  margin:0 -20px 20px;
+
+  code {
+    color:#f8f8f2;
+  }
+
+  li & {
+    margin-left:-60px;
+    padding-left:60px;
+  }
+}
+
+
+small {
+  font-size:11px;
+}
+
+.svg-icon{
+  color: red;
+}
+
+footer {
+  background-color: lightgrey;
+  width: 100%;
+  margin-top: 160px;
+  position: absolute;
+  bottom: 0;
+  display: block;
+  align-items: center;
+  justify-content: center;
+
+  .footer-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  small {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  // .footer-disclaimer {
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: center;
+  // }
+
+  ul {
+    list-style: none;
+  }
+
+  a {
+    font-weight:bold;
+  }
+
+  p {
+    float:left;
+  }
+
+  p + p {
+    float:right;
+  }
+}
+
+@import 'mobile';
