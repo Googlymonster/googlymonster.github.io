@@ -1,35 +1,19 @@
-<footer class="site-footer h-card">
-  <data class="u-url" href="{{ "/" | relative_url }}"></data>
-
-  <div class="wrapper">
-
-    <h2 class="footer-heading">{{ site.title | escape }}</h2>
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li class="p-name">
-            {%- if site.author -%}
-              {{ site.author | escape }}
-            {%- else -%}
-              {{ site.title | escape }}
-            {%- endif -%}
-            </li>
-            {%- if site.email -%}
-            <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-            {%- endif -%}
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-2">
-        {%- include social.html -%}
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{- site.description | escape -}}</p>
-      </div>
-    </div>
-
+<footer>
+  <section class="footer-nav">
+      <nav>     
+      <ul>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/post/">Post</a></li>
+        <li><a href="/post/">Projects</a></li>
+      </ul>
+  </nav>
+  </section>
+  <div class="footer-social py-2">
+    {% include social.html %}
   </div>
-
+  <div class="footer-disclaimer">
+    <small>Content ©2020 Kevin Nguyen. All rights reserved. </small>
+    <br>
+    <small>Design and code (except graphics) are open source </small>
+  </div>
 </footer>

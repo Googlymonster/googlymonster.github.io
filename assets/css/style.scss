@@ -1,4 +1,8 @@
 ---
 ---
 
-@import "jekyll-theme-modernist";
+@import "base";
+@import 'config';
+@import 'utilities';
+@import 'buttons';
+@import 'mobile';
