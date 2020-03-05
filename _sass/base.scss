@@ -13,6 +13,7 @@ body {
   font-family:"Montserrat", Arial, sans-serif;
   line-height: 1.6;
   background-color: $light-color;
+  color: set-text-color($dark-color)
 }
 
 img {
@@ -71,6 +72,22 @@ nav {
     }
   }
 
+}
+
+.posts-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 35px;
+}
+
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 35px;
 }
 
 .post {
@@ -142,38 +159,48 @@ footer {
   background-color: lightgrey;
   width: 100%;
   margin-top: 160px;
-  position: absolute;
   bottom: 0;
-  display: block;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 
   .footer-nav {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    align-self: center;
   }
 
   .footer-social {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: inline-block;
+
+    ul {
+      display: flex;
+      justify-content: space-evenly;
+    }
+  
+    a {
+      display: inline-block;
+      margin: 5px;
+      color: set-text-color($dark-color);
+    }  
+
+    svg {
+      fill: set-text-color($dark-color);
+    }
+
+    svg:hover {
+      fill: $primary-color;
+    }
+    
+  }
+
+  .footer-disclaimer {
+    align-self: center;
   }
 
   small {
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-
-  // .footer-disclaimer {
-  //   display: flex;
-  //   align-items: center;
-  //   justify-content: center;
-  // }
-
-  svg:hover {
-    fill: $primary-color;
   }
 
   ul {

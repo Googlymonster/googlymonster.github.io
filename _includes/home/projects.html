@@ -1,0 +1,8 @@
+<div id="projects" class="projects-container">
+    {% for project in site.data.projects %}
+    <h1>{{project.name}}</h1>
+    <p>
+        <a href="{{project.url}}">Hello</a>
+    </p>
+    {% endfor %}
+</div>
