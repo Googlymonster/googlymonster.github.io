@@ -1,8 +1,11 @@
-<div id="posts" class="posts-container">
-    {% for page in site.posts %}
-    <h1>{{page.title}}</h1>
-    <p>
-        <a href="{{page.url}}">Hello</a>
-    </p>
-    {% endfor %}
+<div id="posts" class="posts">
+    <h1 class="section-heading">Posts</h1>
+    <div class="posts-container">
+        {% for page in site.posts %}
+        <h3>{{page.title}}</h3>
+        <p>
+            <a href="{{page.url}}">Hello</a>
+        </p>
+        {% endfor %}
+    </div>
 </div>

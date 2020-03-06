@@ -13,7 +13,7 @@ body {
   font-family:"Montserrat", Arial, sans-serif;
   line-height: 1.6;
   background-color: $light-color;
-  color: set-text-color($dark-color)
+  color: set-text-color($dark-color);
 }
 
 img {
@@ -50,6 +50,7 @@ nav {
 .showcase {
   @include set-background($light-color);
   height: 600px;
+  display: block;
 
   &-content {
     height: 100%;
@@ -71,24 +72,38 @@ nav {
       line-height: 1.2;
     }
   }
-
 }
 
-.posts-container{
+.posts {
+  margin-top: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 35px;
+
+  .posts-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
-.projects-container {
+.projects {
+  margin-top: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 35px;
+
+  .projects-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
+
 
 .post {
   background-color: $light-color;

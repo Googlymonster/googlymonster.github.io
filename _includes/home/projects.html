@@ -1,8 +1,11 @@
-<div id="projects" class="projects-container">
-    {% for project in site.data.projects %}
-    <h1>{{project.name}}</h1>
-    <p>
-        <a href="{{project.url}}">Hello</a>
-    </p>
-    {% endfor %}
+<div id="projects" class="projects">
+    <h1 class="section-heading">Projects</h1>
+    <div class="projects-container">
+        {% for project in site.data.projects %}
+        <h3>{{project.name}}</h3>
+        <p>
+            <a href="{{project.url}}" target="_blank">Hello</a>
+        </p>
+        {% endfor %}
+    </div>
 </div>
