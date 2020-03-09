@@ -6,7 +6,7 @@
   summary: |
     An open source, offline first EMR designed for hospitals in resource constrained locations using Ember.js, Couch, Pouch, and Node.
   dribbble: https://dribbble.com/jag/projects/213165-HospitalRun
-  project_image: /img/projects/hospitalrun.png
+  project_image: assets/images/projects/hospitalrun.png
   stars: "4,172"
   forks: "1,240"
   contributors: "124"
@@ -18,7 +18,7 @@
   summary: |
     A line of t-shirts for developers started with the help of nearly 500 <a href="https://www.kickstarter.com/projects/jag/dev-tees">Kickstarter backers</a> in 2013.
   dribbble: https://dribbble.com/jag/projects/89915-Dev-Tees
-  project_image: /img/projects/devtees.png
+  project_image: assets/images/projects/devtees.png
 
 - name: RemoteJobs.io
   url: http://remotejobs.io
@@ -27,7 +27,7 @@
   status: Acquired by LiftUX in 2015
   summary: |
     A job board and job seeker site for connecting remote employees with new opportunities. Acquired by <a href="https://liftux.com/">LiftUX</a>, 2015.
-  project_image: /img/projects/remotejobs-io.png
+  project_image: assets/images/projects/remotejobs-io.png
 
 - name: Fizzy syntax theme
   url: https://atom.io/themes/fizzy
@@ -35,7 +35,7 @@
   timeframe: 2014 - Present
   summary: |
     A custom syntax theme for <a href="https://atom.io/" target="_blank">Atom</a> with bright and bubbly colors.
-  project_image: /img/projects/fizzy.png
+  project_image: assets/images/projects/fizzy.png
   downloads: "61,336"
   contributors: "6"
 
@@ -45,7 +45,7 @@
   timeframe: 2015 - Present
   summary: |
     A simple Jekyll-powered resume template for GitHub Pages sites.
-  project_image: /img/projects/github-pages-resume-template.png
+  project_image: assets/images/projects/github-pages-resume-template.png
   stars: "675"
   forks: "537"
   contributors: "14"
@@ -56,7 +56,7 @@
   timeframe: 2014
   summary: |
     The default Jekyll theme that shipped with the release of Jekyll 2.0.
-  project_image: /img/projects/minima.png
+  project_image: assets/images/projects/minima.png
   stars: "842"
   forks: "706"
   contributors: "34"

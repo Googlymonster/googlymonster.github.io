@@ -4,6 +4,9 @@
         {% for project in site.data.projects %}
         <h3>{{project.name}}</h3>
         <p>
+            {{project.summary}}
+        </p>
+        <p>
             <a href="{{project.url}}" target="_blank">Hello</a>
         </p>
         {% endfor %}

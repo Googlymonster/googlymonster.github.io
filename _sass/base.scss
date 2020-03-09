@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700');
+@import url('https://fonts.googleapis.com/css?family=Lobster');
 @import 'config';
 @import 'utilities';
 @import 'buttons';
@@ -68,6 +68,7 @@ nav {
     }
 
     h1 {
+      @include header-font;
       font-size: 50px;
       line-height: 1.2;
     }
@@ -90,6 +91,7 @@ nav {
 }
 
 .projects {
+  padding: 25px;
   margin-top: 100px;
   display: flex;
   flex-direction: column;
@@ -106,9 +108,14 @@ nav {
 
 
 .post {
-  background-color: $light-color;
-  color: $dark-color;
-  
+  margin: 50px;
+
+  &-showcase {
+    background-color: $light-color;
+    color: $dark-color;
+    margin: 50px;
+  }
+
   nav {
     a:hover {
       color: $primary-color;
@@ -161,14 +168,130 @@ pre {
   }
 }
 
+.site-nav {
+  display: flex;
+  justify-content: space-between;
+  z-index: 2;
+
+  .my-name {
+    font-weight: bold;
+    font-size: 28px;
+    letter-spacing: -1px;
+
+    @media (max-width: 580px) {
+      font-size: 22px;
+    }
+  }
+
+  .statement {
+    @include rounded;
+    font-size: 18px;
+
+    @media (max-width: 700px) {
+      font-size: 16px;
+    }
+
+    @media (max-width: 650px) {
+      display: none;
+    }
+  }
+
+  .site-title {
+    margin: auto auto;
+    @media (max-width: 580px) {
+      line-height: 1.2;
+    }
+  }
+}
+
+.site-nav-menu {
+  @include border-radius(3px);
+  margin: auto auto;
+  padding: auto auto;
+  background: $light-color;
+  right: 0;
+  float: right;
+  position: relative;
+
+  &:hover {
+    .links { display: block; }
+
+    .nav-trigger {
+      .menu-icon {
+        display: inline-block;
+      }
+    }
+
+  }
+
+  .nav-trigger {
+    @include border-radius(3px);
+    padding: 6px;
+    display: block;
+    text-align: right;
+    line-height: 1;
+
+    .menu-icon {
+      display: block;
+
+      path {
+        fill: rgba($dark-color, 1);
+      }
+    }
+  }
+
+  .links {
+    list-style: none;
+    margin: 0;
+    padding: 0 15px 8px;
+    text-align: right;
+    display: none;
+
+    > li:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.page {
+  &-home {
+    @media (min-width: 700px) {
+      .page-nav-menu {
+        display: none;
+      }
+    }
+    @media (max-width: 700px) {
+      .page-nav-for-intro {
+        display: none;
+      }
+      .page-nav-menu {
+        position: absolute;
+        top: 8px;
+        right: 0px;
+        display: none;
+      }
+    }
+  }
+  
+  &-header {
+    @include header-font;
+    font-size: 40px;
+    line-height: 1.3;
+    font-weight: 600;
+  }
+
+  &-container {
+    padding: 35px;
+  }
+}
+
+
 
 small {
   font-size:11px;
 }
 
-.svg-icon{
-  color: red;
-}
+
 
 footer {
   background-color: lightgrey;

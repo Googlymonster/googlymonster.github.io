@@ -6,12 +6,48 @@
     overflow: hidden;
   }
 
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.svg-icon{
+    color: red;
+  }
+
   
 $spaceamounts: (1,2,3,4,5);
 
 @each $space in $spaceamounts {
     .m-#{$space} {
         margin: #{$space}rem;
+    }
+    
+    .mb-#{$space} {
+        margin-bottom: #{$space}rem;
+    }
+
+    .mt-#{$space} {
+        margin-top: #{$space}rem;
+    }
+
+    .mr-#{$space} {
+        margin-right: #{$space}rem;
+    }
+
+    .ml-#{$space} {
+        margin-left: #{$space}rem;
     }
 
     .my-#{$space} {
@@ -33,4 +69,25 @@ $spaceamounts: (1,2,3,4,5);
     .px-#{$space} {
         padding: 0 #{$space}rem;
     }
+}
+
+@mixin rounded {
+    font-family: "Varela Round", Arial, sans-serif;
+    color: $dark-color;
+}
+
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    border-radius: $radius;
+}
+
+.default-shadow {
+    box-shadow:
+      0 0px 6px rgba($dark-color,.20),
+      0 7px 34px 0 rgba($light-color,1);
+}
+
+@mixin header-font {
+    font-family: "Lobster", serif;
 }
