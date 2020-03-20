@@ -254,6 +254,11 @@ pre {
 }
 
 .page {
+    display: block;
+    max-width: 1100px;
+    margin: 25px auto;
+    padding: 25px 5px;
+    overflow: hidden;
   &-home {
     @media (min-width: 700px) {
       .page-nav-menu {
@@ -281,7 +286,11 @@ pre {
   }
 
   &-container {
-    padding: 35px;
+    display: block;
+    max-width: 1100px;
+    margin: 25px auto;
+    padding: 25px 5px;
+    overflow: hidden;
   }
 }
 
