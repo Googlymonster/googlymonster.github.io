@@ -3,24 +3,29 @@
 - name: Rock Paper Scissers
   summary: |
     A Rock, Paper, Scissors game built using HTML, CSS, and Vanilla Javascript
-  game_gif: https://raw.githubusercontent.com/Googlymonster/PythonPong/master/demo.gif
+  game_gif: https://raw.githubusercontent.com/Googlymonster/RockPaperScissors/master/demo.gif
+  code: https://github.com/Googlymonster/RockPaperScissors
 
 - name: Tetris
   summary: |
     A Tetris game written in Python.
   game_gif: https://raw.githubusercontent.com/Googlymonster/PythonTetris/master/demo.gif
+  code: https://github.com/Googlymonster/PythonTetris
 
 - name: Connect Four
   summary: |
     A two-player Connect Four game written in Python.
   game_gif: https://raw.githubusercontent.com/Googlymonster/PythonConnectFour/master/demo.gif
+  code: https://github.com/Googlymonster/PythonConnectFour
 
 - name: Pong
   summary: |
     A two-player Pong game written in Python.
   game_gif: https://raw.githubusercontent.com/Googlymonster/PythonPong/master/demo.gif
+  code: https://github.com/Googlymonster/PythonPong
 
 - name: Snake
   summary: |
     A Snake game written in Python.
   game_gif: https://raw.githubusercontent.com/Googlymonster/PythonSnake/master/demo.gif
+  code: https://github.com/Googlymonster/PythonSnake
