@@ -1,0 +1,28 @@
+<div id="games" class="games">
+    <div class="games-container">
+        <h1 class="section-heading">Games</h1>
+    </div>
+    <div class="carousel" aria-label="Gallery">
+    {% for game in site.data.games %}
+            <h3 class="carousel__title">{{game.name}}</h3>
+            <p>{{game.summary}}</p>
+            <ol class="carousel__viewport">
+            <li id="carousel__slide" tabindex="0" class="carousel__slide">     
+                <div class="carousel__snapper">  
+                    <img class="animated-gif" src="{{game.game_gif}}" alt="{{game.name}}">
+                </div>
+            </li>
+        </ol>
+        {% endfor %}
+    {% for game in site.data.games %}
+        <aside class="carousel__navigation">
+            <ol class="carousel__navigation-list">
+            <li class="carousel__navigation-item">
+                <a href="#carousel__slide{{ forloop.index }}"
+                class="carousel__navigation-button">Go to slide {{ forloop.index }}</a>
+            </li>
+            </ol>
+        </aside>
+    {% endfor %}
+    </div>
+</div>
