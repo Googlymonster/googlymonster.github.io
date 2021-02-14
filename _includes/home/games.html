@@ -6,7 +6,7 @@
         <div class="gallery-items">
         {% for game in site.data.games %}
             <div class="gallery-item">
-                <h3 class="gallery_item_title">{{game.name}}</h3>
+                <h3 class="gallery-item-title">{{game.name}}</h3>
                 <p>{{game.summary}}</p>  
                 <a href="{{game.code}}" target="_blank">  
                     <img class="animated-gif" src="{{game.game_gif}}" alt="{{game.name}}">

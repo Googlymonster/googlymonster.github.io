@@ -8,7 +8,7 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 #
-# If you need help with YAML syntax, here are some quick references for you: 
+# If you need help with YAML syntax, here are some quick references for you:
 # https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
 # https://learnxinyminutes.com/docs/yaml/
 #
@@ -22,15 +22,17 @@ title: Kevin Nguyen
 author: Kevin Nguyen
 email: kdnguyen9088@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  The personal site of Kevin Nguyen, a software designer/developer hobbyist, and eventually a means for paying the rent. I blog about code,
-  design, fitness, etc. You can find some of my personal projects here. For any freelance or hiring opportunities
+  The personal site of Kevin Nguyen, a software designer/developer hobbyist, and eventually a means for paying the rent. You can find some of my personal projects here. For any freelance or hiring opportunities
   you can contact me at Kevin.Nguyen@wintechnologies.info. Use code at your own risk.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 repository: googlymonster.github.io
 github_username: googlymonster
 show_downloads: false
-google_analytics: 
+sass:
+  sass_dir: _sass
+  style: compressed
+# google_analytics:
 # Build settings
 plugins:
   - jekyll-feed
@@ -44,14 +46,14 @@ plugins:
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
 #
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/

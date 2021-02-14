@@ -1,93 +1,90 @@
 .container {
-
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 5px;
-    overflow: hidden;
-  }
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 0 5px;
+	overflow: hidden;
+}
 
 .right {
-    float: right;
+	float: right;
 }
 
 .left {
-    float: left;
+	float: left;
 }
 
 .relative {
-    position: relative;
+	position: relative;
 }
 
 .absolute {
-    position: absolute;
+	position: absolute;
 }
 
-.svg-icon{
-    color: red;
-  }
+.svg-icon {
+	color: red;
+}
 
-  
-$spaceamounts: (1,2,3,4,5);
+$spaceamounts: (1, 2, 3, 4, 5);
 
 @each $space in $spaceamounts {
-    .m-#{$space} {
-        margin: #{$space}rem;
-    }
-    
-    .mb-#{$space} {
-        margin-bottom: #{$space}rem;
-    }
+	.m-#{$space} {
+		margin: #{$space}rem;
+	}
 
-    .mt-#{$space} {
-        margin-top: #{$space}rem;
-    }
+	.mb-#{$space} {
+		margin-bottom: #{$space}rem;
+	}
 
-    .mr-#{$space} {
-        margin-right: #{$space}rem;
-    }
+	.mt-#{$space} {
+		margin-top: #{$space}rem;
+	}
 
-    .ml-#{$space} {
-        margin-left: #{$space}rem;
-    }
+	.mr-#{$space} {
+		margin-right: #{$space}rem;
+	}
 
-    .my-#{$space} {
-        margin: #{$space}rem 0;
-    }
+	.ml-#{$space} {
+		margin-left: #{$space}rem;
+	}
 
-    .mx-#{$space} {
-        margin: 0 #{$space}rem;
-    }
+	.my-#{$space} {
+		margin: #{$space}rem 0;
+	}
 
-    .p-#{$space} {
-        padding: #{$space}rem;
-    }
+	.mx-#{$space} {
+		margin: 0 #{$space}rem;
+	}
 
-    .py-#{$space} {
-        padding: #{$space}rem 0;
-    }
+	.p-#{$space} {
+		padding: #{$space}rem;
+	}
 
-    .px-#{$space} {
-        padding: 0 #{$space}rem;
-    }
+	.py-#{$space} {
+		padding: #{$space}rem 0;
+	}
+
+	.px-#{$space} {
+		padding: 0 #{$space}rem;
+	}
 }
 
 @mixin rounded {
-    font-family: "Varela Round", Arial, sans-serif;
-    color: $dark-color;
+	font-family: "Varela Round", Arial, sans-serif;
+	color: $dark-color;
 }
 
 @mixin border-radius($radius) {
-    -webkit-border-radius: $radius;
-    -moz-border-radius: $radius;
-    border-radius: $radius;
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	border-radius: $radius;
 }
 
 .default-shadow {
-    box-shadow:
-      0 0px 6px rgba($dark-color,.20),
-      0 7px 34px 0 rgba($light-color,1);
+	box-shadow: 0 0px 6px rgba($dark-color, 0.2),
+		0 7px 34px 0 rgba($light-color, 1);
 }
 
 @mixin header-font {
-    font-family: "Lobster", serif;
+	font-family: "Lobster", serif;
 }
