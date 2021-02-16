@@ -1,8 +1,7 @@
 ---
-
 - name: Rock Paper Scissers
   summary: |
-    A Rock, Paper, Scissors game built using HTML, CSS, and Vanilla Javascript
+    A Rock, Paper, Scissors game built using HTML, CSS, and Vanilla Javascript.
   game_gif: https://raw.githubusercontent.com/Googlymonster/RockPaperScissors/master/demo.gif
   code: https://github.com/Googlymonster/RockPaperScissors
 
@@ -29,3 +28,9 @@
     A Snake game written in Python.
   game_gif: https://raw.githubusercontent.com/Googlymonster/PythonSnake/master/demo.gif
   code: https://github.com/Googlymonster/PythonSnake
+
+- name: React TicTacToe
+  summary: |
+    A TicTacToe game written using the React library.
+  game_gif: https://raw.githubusercontent.com/Googlymonster/ReactTicTacToe/master/demo.gif
+  code: https://github.com/Googlymonster/ReactTickTacToe

@@ -1,66 +1,72 @@
-@media(max-width: 700px) {
-  nav {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    ul {
-      align-items: center;
-    }
-  }
-  .logo {
-    display: none;
-  }
+@media (max-width: 700px) {
+	nav {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		ul {
+			align-items: center;
+		}
+	}
+	.logo {
+		display: none;
+	}
 
-  .showcase {
-      height: 400px;
-      
-      &-content {
-          text-align: center;
-  
-          img {
-              display: none;
-          }
-      }
-      
-      &-buttons {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-        }
-  }
+	.showcase {
+		height: 400px;
 
+		&-content {
+			text-align: center;
 
-  .page {
-      &-home {
-        @media (min-width: 700px) {
-          .site-nav-menu {
-            display: none;
-          }
-        }
-        @media (max-width: 700px) {
-          .site-nav-for-intro {
-            display: none;
-          }
-          .site-nav-menu {
-            position: absolute;
-            top: 8px;
-            right: 0px;
-          }
-        }
-      }
-      
-      &-header {
-        margin: 15px;
-        font-size: 40px;
-        line-height: 1.3;
-        font-weight: 600;
-      }
-    
-      &-container {
-        padding: 25px;
-      }
-    
-    
-    }
+			img {
+				display: none;
+			}
+		}
 
+		&-buttons {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+	}
+
+	.game {
+		margin: 0 15px;
+		padding: 0 0;
+
+		.games-header {
+			margin: 0 15px;
+			padding: 0 0;
+		}
+	}
+
+	.page {
+		&-home {
+			@media (min-width: 700px) {
+				.site-nav-menu {
+					display: none;
+				}
+			}
+			@media (max-width: 700px) {
+				.site-nav-for-intro {
+					display: none;
+				}
+				.site-nav-menu {
+					position: absolute;
+					top: 8px;
+					right: 0px;
+				}
+			}
+		}
+
+		&-header {
+			margin: 15px;
+			font-size: 40px;
+			line-height: 1.3;
+			font-weight: 600;
+		}
+
+		&-container {
+			padding: 25px;
+		}
+	}
 }

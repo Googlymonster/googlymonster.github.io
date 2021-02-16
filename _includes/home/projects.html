@@ -1,15 +1,19 @@
-<div id="projects" class="projects">
-    <h1 class="section-heading">Projects</h1>
-    <div class="projects-container">
+<div class="projects">
+    <div class="projects-header">
+        <h1 class="section-heading">Web Applications</h1>
+    </div>
+    <div class="gallery" aria-label="Gallery">
+        <div class="gallery-items">
         {% for project in site.data.projects %}
-        <h3>{{project.name}}</h3>
-        <p>
-            {{project.summary}}
-        </p>
-        <p>
-            <a href="{{project.url}}" target="_blank">Hello</a>
-        </p>
+            <div class="gallery-item">
+                <h3 class="gallery-item-title">{{project.name}}</h3>
+                <p>{{project.summary}}</p>  
+                <a href="{{project.code}}" target="_blank">  
+                    <img class="animated-gif" src="{{project.project_image}}" alt="{{project.name}}">
+                </a>
+            </div>
         {% endfor %}
+        </div>
     </div>
 </div>
 
