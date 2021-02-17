@@ -8,5 +8,17 @@
 - name: TownHall
   url: https://github.com/Googlymonster/TownHall
   summary: |
-    A Social Media app written using React/Redux.
+    A Social Media app written using React/Redux and Material UI.
   project_image: https://raw.githubusercontent.com/Googlymonster/TownHall/master/demo.gif
+
+- name: React E-Commerce
+  url: https://github.com/Googlymonster/react-ecommerce
+  summary: |
+    A E-Commerce site created using the React, Material UI, Commercejs, and Stripejs.
+  project_image: https://raw.githubusercontent.com/Googlymonster/react-ecommerce/master/demo.gif
+
+- name: ReactChat
+  url: https://github.com/Googlymonster/ReactChat
+  summary: |
+    A React application that mimics Microsoft Teams. This application utilizes Chatengine.io.
+  project_image: https://raw.githubusercontent.com/Googlymonster/ReactChat/master/demo.gif
