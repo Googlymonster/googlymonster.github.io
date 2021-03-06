@@ -24,7 +24,7 @@ My design process starts with defining what issue is being solved by the app I'm
 <br/>
 Utilizing tools like [Adobe XD](https://www.adobe.com/products/xd.html?promoid=PYPVQ3HN&mv=other) or [Figma](https://www.figma.com/) allows me to wireframe and prototype how I want the applications to look and feel. Once the UI mock-up is complete it can then move on to development. 
 
-<br/>
+<!-- <br/>
 ### My Development Process
 
-The development process
+The development process -->
