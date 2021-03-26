@@ -40,3 +40,9 @@
     A Rock, Paper, Scissors game built using HTML, CSS, and Vanilla Javascript.
   game_gif: https://raw.githubusercontent.com/Googlymonster/RockPaperScissors/master/demo.gif
   code: https://github.com/Googlymonster/RockPaperScissors
+
+- name: Arkanoid
+  summary: |
+    A arkanoid game built using Typescript.
+  game_gif: https://raw.githubusercontent.com/Googlymonster/arkanoid/master/demo.gif
+  code: https://github.com/Googlymonster/arkanoid
